@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <meta name="google-site-verification" content="up8ywAeOq4uLAnE12qqTlzIDrjbm2FyXez0DedoLhpg">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="/images/favicon.svg">
+    <title>Dylan Bullock - Software Developer | Portfolio</title>
+    <meta name="description" content="I'm a college student studying software development. My expertise primarily lies in front-end development, although my goal is to become a full-stack developer. I'm looking for work experience, please contact me if you're interested.">
+</head>
+<body>
+
+    <nav aria-label="Main navbar">
+        <h2>Dylan's Portfolio</h2>
+        <a href="#navbar">Home</a>
+        <a href="#about-me-container">About Me</a>
+        <a href="#showcase-container">Showcase</a>
+        <a href="#contacts-container">Contact Me</a>
+    </nav>
+
+    <div id="container">
+        <div class="fancy-text-container">
+            <p>Hey there, my name is <span id="span-name">Dylan.</span><br>I'm a <span id="animatedText"></span><br>based in <span id="span-location">Norwich, England.</span></p>
+        </div>
+        <a id="download-btn" href="/images/cv-dylan-bullock.pdf" target="_blank" download>Download my CV</a>
+    </div>
+
+    <div id="about-me-container">
+        <h2>Who am I?</h2>
+        <p>I'm a college student taking a T-level course in Digital Production, Design and Development. I'm 17, and my hobbies include programming, gaming, cooking, listening to music, and going to the gym.</p>
+        <p>Although my course will put me on an industry placement, I would love to gain experience outside of that. I'm hoping to go into an apprenticeship or job after I finish college, university is a possible option but it is also very expensive.</p>
+        <p>If you are interested in offering me work experience, please <a href="mailto:dylanbullock.dev@gmail.com" target="_blank">Email me.</a></p>
+    </div>
+
+    <div class="anti-overflow">
+        <div id="abilities-container">
+            <h2>My Abilities</h2>
+            <p>As of now, I am able to write proficient code in Python, HTML, and CSS. I am also learning JavaScript, SQL, and how to create and maintain the back-end of a website.<br><br>Currently, I am much better at front-end design and development than back-end. However, I want to learn the back-end too so that I can become a full stack developer.<br><br>As well as programming, I can design code with flowcharts and websites with LoFi, MedFi, and HiFi diagrams.</p>
+            <p>Outside of my industry-related skills, I can also create and deliver presentaions and work as part of a team.</p>
+        </div>
+
+        <div id="view-examples-container">
+            <h3>View examples of my skills</h3>
+            <img src="\images\arrow.png" alt="A squiggly arrow pointing towards examples of my projects.">
+        </div>
+    </div>
+
+    <div id="showcase-container">
+        <button class="prev" onclick="plusSlides(-1)" aria-label="A back button that changes the current visible slide to the previous slide.">&#10094;</button>
+        <div id="gallery" aria-details="A slideshow gallery showing images of some of my projects, clicking on these images will open a new tab and take you to the Github link for the relative project.">
+            <a class="slide" href="https://github.com/DylanBk/Pokedex" target="_blank"><div class="collage"><img src="images/pokedexSearch.png" alt="An image showing the search function in my Pokedex program."><img src="images/pokedexSettings.png" alt="An image showing the account settings feature in my Pokedex program."><img src="images/pokedexParty.png" alt="An image showing the view party function in my Pokedex program."></div></a>
+            <a class="slide" href="https://github.com/DylanBk/Coin-Count" target="_blank"><div class="collage"><img src="images/coinCount1.png" alt="An image of my Coin Count program running."><img src="images/coinCount2.png" alt="A second image of my Coin Count program running."></div></a>
+            <a class="slide" href="https://github.com/DylanBk/E-commerce-Website" target="_blank"><div class="collage"><img src="images/ecommerece.png" alt="An image of an e-commerce website I made."><img src="images/ecommerceContacts.png" alt="An image of the contact details section on an e-commerce website I made."></div></a>
+        </div>
+        <button class="next" onclick="plusSlides(1)" aria-label="A next button that changes the current visible slide to the next slide.">&#10095;</button>
+    </div>
+
+    <div id="contacts-container" class="anti-overflow">
+        <a class="contact-btn-left" href="mailto:dylanbullock.dev@gmail.com" target="_blank"><img src="images/email.png" alt="An email icon."></a>
+        <a class="contact-btn-left" href="https://www.linkedin.com/in/dylan-bullock-726534293/" target="_blank"><img src="images/linkedin.png" alt="A LinkedIn icon."></a>
+        <a class="contact-btn-mid" href="https://github.com/DylanBk" target="_blank"><img src="images/github.png" alt="A Github icon."></a>
+        <a class="contact-btn-right" href="https://replit.com/@DylanBullock2" target="_blank"><img src="images/replit.png" alt="A Replit icon."></a>
+        <a class="contact-btn-right" href="https://www.instagram.com/dylanbullocksoftwaredev/" target="_blank"><img src="images/instagram.png" alt="An Instagram icon."></a>
+    </div>
+
+    <footer>
+        <ol>
+            <li><a href="#navbar">Home</a></li>
+            <li><a href="#container">About me</a></li>
+            <li><a href="#about-me-container">What can I do?</a></li>
+            <li><a href="#view-examples-container">Showcase</a></li>
+        </ol>
+        <ol>
+            <li><a href="#showcase-container">Get in contact with me</a></li>
+            <li><a href="/images/cv-dylan-bullock.pdf" target="_blank" download>Download my CV</a></li>
+        </ol>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#animatedText', {
+            strings: ['Software Developer', 'College Student'],
+            typeSpeed: 50,
+            backSpeed: 50,
+            loop: true
+        });
+    </script>
+</body>
+</html>
