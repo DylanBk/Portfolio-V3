@@ -865,12 +865,12 @@ body {
     }
 
     #container {
-        width: max-content;
+        /* width: max-content; */
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
         align-items: stretch;
-        margin: 5rem 7rem 0;
+        margin: 5rem 0 0 5rem;
         user-select: none;
     }
     #container a {
@@ -945,20 +945,20 @@ body {
     }
 
     #abilities-container {
-        width: 18rem;
+        width: 90%;
         display: flex;
         flex-direction: column;
         border: solid 1px var(--tertiaryBlue);
         border-radius: 50px 0 50px 0;
-        margin: auto;
+        margin: 10rem auto;
         background: var(--tertiaryBlue);
         box-shadow: 15px 15px 5px 10px rgba(0, 0, 0, 0.25);
         font-family: Poppins;
         transition: 1s ease all;
-        /* transform: translateX(50%); */
+        transform: none !important;
     }
     #abilities-container h2 {
-        padding-bottom: 1rem;
+        padding: 1rem;
         border-bottom: solid 1px var(--secondaryBlue);
         margin: 0 1rem 1rem;
         color: var(--primaryBlue);
